@@ -1,5 +1,5 @@
 toplevel:
-	cabal sandbox init; \
+#	cabal sandbox init; \
 	cabal install
 
 snarky: 
@@ -21,6 +21,6 @@ clean:
 clean-all: clean
 	rm -rf depsrc; \
 	rm -rf depinst; \
-	cabal sandbox delete
+#	cabal sandbox delete
 
 .PHONY: toplevel snarky test bench clean clean-all
